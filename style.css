@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+:root {
+--lightcyan: hsl(193, 38%, 86%);
+--neongreen: hsl(150, 100%, 66%);
+--grayishblue: hsl(217, 19%, 38%);
+--darkgrayishblue: hsl(217, 19%, 24%);
+--darkblue: hsl(218, 23%, 16%);
+}
+
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: none no-repeat center;
+  background-color: var(--darkblue);
+  font-family: 'Manrope', sans-serif;
+}
+
+body:hover {
+  background: url("design/desktop-design.jpg") no-repeat center;
+  background-color: var(--darkblue);
+}
+
+main {
+  background-color: var(--darkgrayishblue);
+  width: 33.7rem;
+  height: 20.8rem;
+  border-radius: 0.9rem;
+  transform: translateY(-1rem) translateX(-0.5rem);
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2.2rem;
+}
+
+main:hover {
+  opacity: 0.2;
+}
+
+main > h1 {
+  text-transform: uppercase;
+  color: var(--neongreen);
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+
+main > p {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--lightcyan);
+  padding-bottom: 0.5rem;
+}
+
+main > button {
+  background-color: var(--neongreen);
+  position: absolute;
+  bottom: -2rem;
+  left: calc(50% - 2rem);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.attribution { 
+  position: absolute;
+  bottom: 1rem;
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
