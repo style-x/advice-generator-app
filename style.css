@@ -10,20 +10,16 @@
 
 
 body {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: none no-repeat center;
   background-color: var(--darkblue);
   font-family: 'Manrope', sans-serif;
-}
-
-body:hover {
-  background: url("design/desktop-design.jpg") no-repeat center;
-  background-color: var(--darkblue);
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -36,10 +32,6 @@ main {
   position: relative;
   box-sizing: border-box;
   padding: 2.2rem;
-}
-
-main:hover {
-  opacity: 0.2;
 }
 
 main > h1 {
@@ -67,10 +59,14 @@ main > button {
   border-color: transparent;
 }
 
+button:hover {
+  box-shadow: 0 0 2rem var(--neongreen);
+}
+
 .attribution { 
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
-  font-size: 11px; text-align: center; 
+  font-size: 0.8rem; text-align: center; 
 }
 
 .attribution a { 
